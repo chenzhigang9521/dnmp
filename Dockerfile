@@ -59,7 +59,10 @@ RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
     && docker-php-ext-install shmop \
     && docker-php-ext-install sysvmsg \
     && docker-php-ext-install sysvsem \
-    && docker-php-ext-install sysvshm
+    && docker-php-ext-install sysvshm \
+    && pecl install seaslog \
+    && docker-php-ext-enable seaslog \
+    && :\
     #&& docker-php-ext-install opcache
     #&& docker-php-ext-install pdo_firebird \
     #&& docker-php-ext-install pdo_dblib \
@@ -118,3 +121,4 @@ RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
     #&& apt-get install -y libmemcached-dev zlib1g-dev \
     #&& pecl install memcached-2.2.0 \
     #&& docker-php-ext-enable memcached
+

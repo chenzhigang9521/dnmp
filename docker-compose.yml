@@ -19,6 +19,7 @@ services:
       - "6411:6411"
       - "6412:6412"
       - "6413:6413"
+      - "6414:6414"
     volumes:
       - /Users/zhigang/Desktop/work/project_code/:/var/www/html/:rw
       - ./conf/conf.d:/etc/nginx/conf.d/:rw

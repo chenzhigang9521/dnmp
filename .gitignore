@@ -1,4 +1,6 @@
 .*
+.gitignore
+nohup.out
 !.gitignore
 www/*
 !www/localhost/
